@@ -25,9 +25,7 @@ def searchGoogle(query):
 
 def pullOneSiteFromGoogle(title, site, location="", time=""):
     query = createQuery(title, site, location, time)
-    print("query created: " + query)
     googleResults = searchGoogle(query)
-    print("these them google results:", googleResults)
     urlList.extend(googleResults)
     return 
 
